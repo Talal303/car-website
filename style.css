@@ -35,35 +35,41 @@ body {
 }
 
 /* Home (Hero) */
+
+
 .hero {
-    position: relative;
-    padding: 100px 0 80px 0;
-    text-align: center;
-    height: 90vh;
     background: linear-gradient(120deg, #232a3d 60%, #181c2b 100%);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.hero p {
-    color: #e0eafc;
-    font-size: 1.7rem;
-    font-weight: 400;
-    margin-bottom: 38px;
-    line-height: 1.5;
-    text-shadow: 0 2px 12px #000a;
-    display: inline-block;
-    padding: 12px 32px;
-    border-radius: 18px;
-    background: rgba(24, 28, 43, 0.7);
+.hero-content {
+    background: rgba(24,28,43,0.7);
+    border-radius: 24px;
+    box-shadow: 0 4px 32px 0 rgba(30,60,114,0.08);
+    padding: 50px 30px;
+    text-align: center;
 }
 .hero h1 {
     color: #ffd700;
-    font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 24px;
     text-shadow: 0 4px 24px #232a3d99;
 }
+.hero p {
+    color: #e0eafc;
+    font-weight: 400;
+    margin-bottom: 38px;
+    line-height: 1.5;
+    text-shadow: 0 2px 12px #000a;
+    font-size: 1.25rem;
+}
 .hero .btn {
-    font-size: 1.15rem;
-    padding: 14px 38px;
+    font-size: 1.1rem;
+    padding: 12px 32px;
     border-radius: 30px;
     background: linear-gradient(90deg, #ffd700 0%, #2a5298 100%);
     color: #232a3d;
@@ -71,12 +77,38 @@ body {
     box-shadow: 0 4px 18px #ffd70066;
     font-weight: 700;
     letter-spacing: 1px;
-    transition: background 0.2s,
-        color 0.2s,
-        box-shadow 0.2s;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 .hero .btn:hover {
     background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+}
+@media (max-width: 767.98px) {
+    .hero {
+        min-height: 40vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .hero-content {
+        padding: 18px 6px;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .hero .btn {
+        font-size: 1rem;
+        padding: 8px 18px;
+    }
+}
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.1rem;
+    }
+    .hero p {
+        font-size: 0.95rem;
+    }
 }
 
 /* About */
