@@ -1,0 +1,170 @@
+
+
+/* Body */
+body {
+    background: linear-gradient(120deg, #181c2b 0%, #232a3d 100%);
+    font-family: 'Outfit';
+    color: #e0eafc;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #232a3d 0%, #1e3c72 100%);
+    box-shadow: 0 4px 24px #000a;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: #ffd700;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 12px #232a3d99;
+}
+.nav-link {
+    color: #e0eafc !important;
+    margin-right: 12px;
+    font-size: 1.1rem;
+    transition: color 0.2s,
+        background 0.2s;
+    border-radius: 6px;
+    padding: 6px 14px;
+}
+.nav-link.active,
+.nav-link:hover {
+    color: #ffd700 !important;
+    background: rgba(255, 215, 0, 0.08);
+}
+
+/* Home (Hero) */
+.hero {
+    position: relative;
+    padding: 100px 0 80px 0;
+    text-align: center;
+    height: 90vh;
+    background: linear-gradient(120deg, #232a3d 60%, #181c2b 100%);
+}
+.hero p {
+    color: #e0eafc;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 38px;
+    line-height: 1.5;
+    text-shadow: 0 2px 12px #000a;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 18px;
+    background: rgba(24, 28, 43, 0.7);
+}
+.hero h1 {
+    color: #ffd700;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 24px;
+    text-shadow: 0 4px 24px #232a3d99;
+}
+.hero .btn {
+    font-size: 1.15rem;
+    padding: 14px 38px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #ffd700 0%, #2a5298 100%);
+    color: #232a3d;
+    border: none;
+    box-shadow: 0 4px 18px #ffd70066;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background 0.2s,
+        color 0.2s,
+        box-shadow 0.2s;
+}
+.hero .btn:hover {
+    background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+}
+
+/* About */
+.about-text {
+    font-size: 1.35rem;
+    font-family: 'Outfit', 'Segoe UI', Arial, sans-serif;
+    color: white;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ffd700;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 0 2px 12px #232a3d99;
+}
+h1,
+h2,
+.section-title {
+    color: #ffd700 !important;
+}
+
+/* Featured Cars */
+.featured-cars .card {
+    background: linear-gradient(120deg, #232a3d 0%, #181c2b 100%);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px #ffd70033;
+    border: 2px solid #ffd70033;
+    transition: box-shadow 0.2s,
+        transform 0.2s,
+        border 0.2s;
+}
+.featured-cars .card:hover {
+    box-shadow: 0 16px 48px #ffd70099;
+    transform: translateY(-6px) scale(1.04);
+    border: 2px solid #ffd700;
+}
+.featured-cars .card-img-top {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    height: 250px;
+    object-fit: cover;
+}
+.featured-cars .card-title {
+    font-weight: 700;
+    color: #ffd700;
+}
+.featured-cars .card-text {
+    font-size: 1.08rem;
+    color: #e0eafc;
+}
+
+/* Feature Card (Why Choose Us, Testimonials) */
+.feature-card {
+    background: linear-gradient(120deg, #232a3d 0%, #181c2b 100%);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px #ffd70033;
+    padding: 36px 28px;
+    text-align: center;
+    margin-bottom: 32px;
+    border: 2px solid #ffd70033;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.2s,
+        transform 0.2s,
+        border 0.2s;
+}
+.feature-card:hover {
+    box-shadow: 0 16px 48px #ffd70099;
+    transform: translateY(-6px) scale(1.04);
+    border: 2px solid #ffd700;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #232a3d 0%, #1e3c72 100%);
+    color: #ffd700;
+    text-align: center;
+    padding: 24px 0 12px 0;
+    margin-top: 60px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
